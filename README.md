@@ -163,6 +163,20 @@ const client = new AsinClient({ fetch: loggingFetch });
 | `trackProduct()`   | POST `/products`            | Adds an ASIN, an Amazon link or a short link (amzn.to, a.co…) to your watchlist. The first check runs in the background within seconds (che… |
 | `updateProduct()`  | PATCH `/products/{id}`      | Target price, drop alerts, check interval, or pause. Send only what changes.                                                                 |
 
+## All Asin SDKs
+
+| SDK        | Package                                                           | Install                                |
+| ---------- | ----------------------------------------------------------------- | -------------------------------------- |
+| Node.js    | [`@asindev/sdk`](https://www.npmjs.com/package/@asindev/sdk)      | `npm install @asindev/sdk`             |
+| Python     | [`asindotdev`](https://pypi.org/project/asindotdev/)              | `pip install asindotdev`               |
+| Go         | [`asin-go`](https://pkg.go.dev/github.com/asindotdev/asin-go)     | `go get github.com/asindotdev/asin-go` |
+| .NET       | [`Asin`](https://www.nuget.org/packages/Asin)                     | `dotnet add package Asin`              |
+| Ruby       | [`asindotdev`](https://rubygems.org/gems/asindotdev)              | `gem install asindotdev`               |
+| PHP        | [`asindotdev/sdk`](https://packagist.org/packages/asindotdev/sdk) | `composer require asindotdev/sdk`      |
+| Java       | [`asin-java`](https://github.com/asindotdev/asin-java)            | build from source, see its README      |
+| CLI        | [`@asindev/cli`](https://www.npmjs.com/package/@asindev/cli)      | `npm install -g @asindev/cli`          |
+| MCP server | [`@asindev/mcp`](https://www.npmjs.com/package/@asindev/mcp)      | `npx -y @asindev/mcp`                  |
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

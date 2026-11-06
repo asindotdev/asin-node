@@ -13,7 +13,7 @@ The SDK exposes **11 typed methods**, one per documented endpoint, plus a generi
 ## Installation
 
 ```sh
-npm install @asindotdev/sdk
+npm install @asindev/sdk
 ```
 
 The SDK works with TypeScript and JavaScript (ES modules). The examples below use TypeScript; JavaScript users can use the same API by omitting TypeScript-only syntax.
@@ -25,7 +25,7 @@ The SDK works with TypeScript and JavaScript (ES modules). The examples below us
 ## Quick start
 
 ```ts
-import { AsinClient } from "@asindotdev/sdk";
+import { AsinClient } from "@asindev/sdk";
 
 const client = new AsinClient({ apiKey: process.env.ASIN_API_KEY });
 
@@ -59,7 +59,7 @@ Both keep the buffered `rawResponse` (status, headers, content type, body bytes)
 ## Errors
 
 ```ts
-import { AsinApiError } from "@asindotdev/sdk";
+import { AsinApiError } from "@asindev/sdk";
 
 try {
   await client.searchAmazon({ query: "wireless earbuds" });
@@ -134,7 +134,7 @@ await client.searchAmazon(
 ## Advanced: custom Fetch transport
 
 ```ts
-import { AsinClient, type AsinFetch } from "@asindotdev/sdk";
+import { AsinClient, type AsinFetch } from "@asindev/sdk";
 
 const loggingFetch: AsinFetch = async (input, init) => {
   const response = await fetch(input, init);

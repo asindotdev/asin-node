@@ -1,4 +1,4 @@
-import { AsinClient } from "@asindotdev/sdk";
+import { AsinClient } from "@asindev/sdk";
 
 const client = new AsinClient({ apiKey: process.env.ASIN_API_KEY });
 
